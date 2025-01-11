@@ -1,6 +1,7 @@
 import React from 'react';
+import type { ReactElement } from 'react';
 
-const GenericFooter = () => {
+const GenericFooter = (): ReactElement => {
   return (
     <footer className={'absolute bottom-0 w-full p-3 text-center'}>
       <div className={'container mx-auto text-center text-spotifyWhite'}>
