@@ -1,20 +1,14 @@
 import React from 'react';
-import LogIn from './routes/LogIn';
+import Login from './pages/Login';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import GenericFooter from './components/GenericFooter';
-
-const router = createBrowserRouter([
-  {
-    path: '/',
-    element: <LogIn />,
-  },
-]);
+import AppRouter from './routes/AppRouter';
 
 const App: React.FC = () => {
   return (
     <div className={'h-screen bg-spotifyGray '}>
-      <RouterProvider router={router} />;
-        <GenericFooter/>
+      <RouterProvider router={AppRouter} />;
+      <GenericFooter />
     </div>
   );
 };
