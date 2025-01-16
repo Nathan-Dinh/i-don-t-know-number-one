@@ -1,14 +1,15 @@
 import React from 'react';
-import Login from './pages/Login';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import GenericFooter from './components/GenericFooter';
+import GlobalFooter from './components/GlobalFooter';
+import GlobalHeader from './components/GlobalHeader';
+import { RouterProvider } from 'react-router-dom';
 import AppRouter from './routes/AppRouter';
 
 const App: React.FC = () => {
   return (
-    <div className={'h-screen bg-spotifyGray '}>
-      <RouterProvider router={AppRouter} />;
-      <GenericFooter />
+    <div className={' bg-spotifyGray h-full'}>
+      <GlobalHeader />
+      <RouterProvider router={AppRouter} />
+      <GlobalFooter />
     </div>
   );
 };
