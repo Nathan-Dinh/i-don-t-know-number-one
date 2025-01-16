@@ -8,7 +8,7 @@ const ProtectedRoute = (): ReactElement => {
   const { isSessionActive } = useContext(AuthContext);
 
   if (isSessionActive === false) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/homepage" replace />;
   } else if (!isSessionActive) {
     return <Navigate to="/" replace />;
   }

@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Login from '../pages/Login';
+import HomePage from '../pages/HomePage';
 import ProtectedRoute from './ProtectedRoute';
 import UserAccount from '../pages/UserAccount';
 
@@ -15,8 +15,8 @@ const AppRouter = createBrowserRouter([
     ],
   },
   {
-    path: '/login',
-    element: <Login />,
+    path: '/homepage',
+    element: <HomePage />,
   },
 ]);
 
