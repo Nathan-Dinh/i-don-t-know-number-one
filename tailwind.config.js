@@ -6,8 +6,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        spotifyGreen: '#1DB954', // Spotify's primary green color
-        spotifyBlack: '#191414', // Spotify's black background color
+        spotifyGreen: '#1ED760', // Spotify's primary green color
+        spotifyBlack: '#121212', // Spotify's black background color
         spotifyGray: '#282828', // Spotify's dark gray UI elements
         spotifyLightGray: '#B3B3B3', // Lighter gray for text/icons
         spotifyPurple: '#8c67ac', // Spotify's purple for "liked songs"
